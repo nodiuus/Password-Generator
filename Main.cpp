@@ -36,25 +36,7 @@ void AppendToFile(string Password, int Length)
 	}
 }
 
-/*void CreateFile(int Length, string Password, string FileName, std::ofstream PasswordFile) {
-
-	string AppendedPassword = GeneratePassword(Length, Password);
-	cout << AppendedPassword << endl;
-
-	PasswordFile.open(FileName, std::ios_base::out);
-
-	if (!PasswordFile.is_open()) {
-		cout << "failed to open " << FileName << '\n';
-	}
-	else {
-		PasswordFile.write(AppendedPassword.data(), AppendedPassword.size());
-		cout << "Saved password to file" << endl;
-	}
-}
-
-*/
-
-int main() { //fuck this shit
+int main() {
 	srand(time(NULL));
 	
 	int Length;
